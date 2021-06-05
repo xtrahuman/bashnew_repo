@@ -1,0 +1,81 @@
+else if(n===8||n===9){
+    sign='+'
+}else{ sign=''    }
+  if (score<=100-n&&score>=90+n){
+      v = 'A'+ sign
+  }else if(score<=89&&score>=80){
+      v = 'B'+ sign
+  }else if(score<=79-n&&score>=70+n){
+      v = 'C'+ sign
+  }else if(score<=69-n&&score>=60+n){
+     v = 'D'+ sign
+  }
+ }
+
+
+
+
+var customerData = {
+  'Joe': {
+    visits: 1
+  },
+  'Carol': {
+    visits: 2
+  },
+  'Howard': {
+    visits: 3,
+  },
+  'Carrie': {
+    visits: 4 
+  }
+};
+for (var key in customerData){
+var name= greetCustomer(key)
+var visitLog=customerData[key]
+  for (var keys in visitLog){
+    
+    if(visitLog[keys]===1){
+      var a = 'Welcome back, '+ name +'! We\'re glad you liked us the first time!'
+    }else if(visitLog[keys]>1){
+      a = 'Welcome back, '+name+'! So glad to see you again!'
+    }
+ console.log(a) }
+  }
+function greetCustomer(firstName){
+  return firstName
+}
+  
+
+
+
+if(grades<=75 && 75-grades<3 ){
+   grades=75     
+}
+else if(grades<=70 && 70-grades<3){
+        grades=70
+}
+else if(grades<=65 && 65-grades<3){
+        grades=65
+      }
+else if(grades<=60 && 60-grades<3){
+        grades=60
+}
+else if(grades<=55 && 55-grades<3){
+        grades=55
+      }
+    else if(grades<=50 && 50-grades<3){
+        grades=50
+      }
+else if(grades<=45 && 45-grades<3){
+        grades=45
+}
+else if(grades<=40 && 40-grades<3){
+        grades=40
+      }
+    else {
+        grades=grades
+    }
+  
+    
+    return grades
+} 
